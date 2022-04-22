@@ -311,7 +311,7 @@ def main():
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     
     try:
-        sock.bind(('127.0.0.1', port))
+        sock.bind(('0.0.0.0', port))
     except:
         print('Failed to bind port')
         exit()
